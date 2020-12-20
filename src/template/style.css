@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+  }
+@font-face {
+    font-family: 'braun-text';
+    src: url('./Chingolo Pro.TTF');
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    align-items: center;
+    justify-items: center; /* adjusted */
+}
+.card {
+    /* background-color: #e9e7e9; */
+    background: #f7f7f7;
+    border-radius: 10px 10px 25px 25px;
+    box-shadow: inset -15px 15px 15px rgba(255,255,255,.2), 
+                inset 15px -15px 15px #e9e7e9,
+                4px 4px 15px rgba(0,0,0,.2),
+                -4px 4px 15px rgba(0,0,0,.2);
+}
+.card .logo {
+    font-family: 'braun-text';
+    font-size: 1.1rem;
+    line-height: 1rem;
+}
+.card .big-A {
+    font-size: 1.6rem;
+}
+button {
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    font-size: 1rem;
+    border-radius: 100%;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: #f9f9f9;
+    box-shadow: inset -5px 11px rgba(230, 222, 222, 0.1),
+                1px 5px rgba(0,0,0,.1);
+    color: #333;
+    font-size: 0.9em;
+    line-height: 33px;
+    font-family: sans-serif;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+/* Power Buttons */
+.power-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    margin: 1rem;
+
+    }
+  .power-btns .left {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background: green;
+    box-shadow: inset -1px 5px rgba(255,255,255,.4);
+ }
+ .power-btns .left .label {
+    content: '';
+    position: relative;
+    top: 25px;
+    left: 3px;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    background: white;
+    border: 1px solid grey;
+  }
+   .power-btns .right {
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        background: red;
+        box-shadow: inset -1px 5px rgba(255,255,255,.4);}
+    .power-btns .right .label {
+        content: '';
+        position: relative;
+        top: 25px;
+        left: 3px;
+        height: 6px;
+        width: 6px;
+        border-radius: 100%;
+        background: transparent;
+        border: 1px solid black;
+      }
+/* Button Colors */
+.btn--green button {
+    color: #33613a;
+  }
+.btn--brown {
+    color: #644633;
+  }
+.btn--yellow {
+    background-color: #ffcd52;
+    
+  }
+.btn--black {
+    color: #0c0c0e;}
+/*  */
+.buttons-grid {
+    margin: 0 auto 0 auto;
+}
+.buttons-grid .col-auto {
+    padding: 0 10px 0 10px;
+}
+.wrapper-window{
+    width: 100%;
+}
+.screen {
+    height: 80px;
+    width: auto;
+    background: #48494e;
+    border-radius: 2px;
+    box-shadow: inset 6px 0 6px rgba(0,0,0,.3),
+                inset -6px 0 6px rgba(0,0,0,.3),
+                inset 0 6px 6px rgba(0,0,0,.3),
+                inset 0 -6px 6px rgba(0,0,0,.3);
+    
+    padding-top: 15px;
+  }
+  .screen .__inner {
+    background: #6f7a72;
+    border: 1px solid darken(#5f6a62,15%);
+    height: 65px;
+    width: 16rem;
+    border-radius: 3px;
+    margin: 0 auto;
+    box-shadow: inset -10px 10px 14px rgba(255,255,255,.1),
+                inset -10px 10px 14px rgba(255,255,255,.1);
+   
+  }
+  .output::-webkit-scrollbar {
+      display: none;
+  }
+  .output {
+    background: #c1cfb6;
+    height: 45px;
+    width: 15rem;
+    border-radius: 10px;
+    border: 1px solid darken(#c1cfb6, 10%);
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    padding: 0 5px;
+    box-shadow: inset -10px 15px 4px rgba(255,255,255,.2);
+    color: #444;
+    font-family: monospace;
+    font-size: 34px;
+    line-height: 45px;
+    letter-spacing: 2px;
+    text-align: right;
+    overflow-y:hidden;
+    overflow-x: scroll;
+  }
