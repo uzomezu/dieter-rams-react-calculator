@@ -75,7 +75,7 @@ function Calculator(props){
             <span className="card-title logo">re<span className="big-A">A</span>ct</span>
             <div className="screen mx-auto">
                 <div className="screen__inner">
-                  <input type="text" readonly className="output" value={input} placeholder="0"/>
+                  <input type="text" readOnly className="output" value={input} placeholder="0"/>
                 </div>
               </div>
               <div className="power-btns">
